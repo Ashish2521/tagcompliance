@@ -118,8 +118,7 @@
                 tags: tagData
             };
 
-            // Perform the form submission (replace 'API_ENDPOINT_URL' with your actual API endpoint URL)
-            fetch('API_ENDPOINT_URL', {
+            fetch(' https://develop.d3j35zy78mqhz3.amplifyapp.com', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -129,15 +128,13 @@
             .then(function(response) {
                 if (response.ok) {
                     alert("Tag value submitted successfully!");
-                    // Optionally, perform any additional actions or display a success message
                 } else {
                     alert("An error occurred. Please try again later.");
-                    // Optionally, handle error cases or display an error message
+
                 }
             })
             .catch(function(error) {
                 alert("An error occurred. Please try again later.");
-                // Optionally, handle error cases or display an error message
             });
         });
     </script>
